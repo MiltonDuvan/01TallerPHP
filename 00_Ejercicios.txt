@@ -1,0 +1,65 @@
+A. Clases y Objetos
+1. Construir una clase Empleado, que tenga como atributos su nombre, celular, cargo, sueldo y auxilio de transporte. Definir el auxilio de transporte como static del 5% de su salario. Crear los objetos correspondientes para poder validar el funcionamiento de la clase.
+– Utilizar los modificadores de acceso public, private, protected, static en la definición de los atributos
+– Acceder a los atributos nombre y celular haciendo uso de los métodos setter y getter.
+– Definir un método getDatosEmpleado a través una variable de tipo array que presente como dato el cargo y sueldo.
+Plantear un segundo método que imprima el nombre y un mensaje si debe o no pagar retención en la fuente (si el sueldo supera el valor de 3750000 debe pagar una rete fuente de 9%).
+
+2. Cree una clase llamada Aprendiz con las siguientes propiedades: Documento de identidad, Apellidos, Nombres, Asignatura, Primer Parcial, Segundo Parcial y Examen Final.
+▪ Crear un método llamado Definitiva el cual permita calcular la calificación definitiva, la cual se obtiene como el 30% del primer parcial, el 30% del segundo parcial y 40% del examen final.
+▪ Crear un método llamado: ConceptoValorativo el cual retorne uno de los siguientes mensajes:
+▪ Malo: si la calificación definitiva es inferior a 2
+▪ Aceptable: si la calificación definitiva va desde 3 y es inferior a 4
+▪ Excelente: si la calificación definitiva va desde 4 y es inferior a 4.5
+▪ Crear una instancia de este objeto y visualizar sus correspondientes propiedades y acceder a cada uno de sus métodos
+▪ Crear un método llamado: ValoracionCualitativa el cual imprima un mensaje de “El Aprendiz Aprobó la competencia” o si la nota definitiva es menor a 3.5 El aprendiz reprobó la competencia”.
+
+3. Crear una clase llamada Netflix con las propiedades título, año de creación, alquilada sí/no, fecha de devolución Utilizar los modificadores de acceso public, private, protected y/o static en la definición de las propiedades, acceder haciendo uso de setter y getter a las propiedades
+Diseñar un método para interactuar con ella y mostrar:
+▪ El nombre de la película.
+▪ El año de creación
+▪ Si está disponible para alquiler o No.
+▪ Fecha prevista de devolución.
+▪ Crear un método CostodeAlquiler. Hallar el valor a cancelar de acuerdo número de días que alquila la película. El valor de alquiler es de $4000 por día. Máximo tiempo de alquiler 5 días.
+
+4. Desarrollar una clase denominada Peluquería con los atributos id_peluqueria, nombre, dirección, teléfono, hora_inicio, hora_cierre, valor_corte, servicio, utilizar los modificadores public, private, protected en algunos de sus atributos.
+Construir los métodos getter y seter para servicio y valor_corte
+Crear un método AgendarCita que permita tomar un servicio de la peluquería identificando el valor del corte
+
+B. Herencia Super clase y subclase
+
+5. Confeccionar una clase Persona que tenga como atributos el nombre y la edad. Definir como responsabilidades un método que cargue los datos personales y otro que los imprima.
+Plantear una segunda clase Empleado que herede de la clase Persona. Añadir un atributo sueldo y los métodos de cargar el sueldo e imprimir su sueldo.
+Definir una tercera clase llamada Contador que herede de la clase Persona(nombre y edad), y presente un atributo de tipo protected diaslaborados. Definir un método que permita obtener los días trabajados realizando la operación de sueldo por días laborados.
+Definir un objeto de la clase Persona un objeto de Empleado para llamar a sus métodos(mostrar el salario). También crear un objeto de la clase Contador y llamar a sus métodos y mostrar el cálculo de los días trabajados.
+
+6. Construir una clase electrodoméstico que tenga las propiedades marca e IVA (19%) declararla como constante. Crear un método para visualizar la información de la clase.
+Crear una subclase lavadora con el atributo cantidad y precio heredar el método constructor de electrodoméstico.
+Crear un método para hallar el valor de la venta de una lavadora
+Crear las instancias de objetos lavadora1 marca LG, lavadora 2 Wirpool asignando los valores
+Cantidad Precio
+5
+1350000
+8
+1150000
+
+7. Crear una clase Libro que contenga los siguientes atributos:
+– Código
+– Titulo o nombre del libro
+– Autor
+– Crear un método para visualizar sus datos.
+– Crear una subclase revista que tenga las propiedades edición y numero de paginas
+– Crear varias instancias de objetos para mostrar varios valores. Asignar con set los valores de edición y número de páginas para ser mostrados junto con los demás datos.
+
+C. Polimorfismo: redefinición de métodos y propiedades
+
+8. Elaborar una clase Persona que tenga como atributos el nombre y la edad. Definir como responsabilidades un método getPersona que cargue los datos personales y otro que los imprima.
+Plantear una segunda clase Empleado que herede de la clase Persona. Añadir un atributo sueldo y estado = “activo”, los métodos de cargar el sueldo e imprimir todos los datos del empleado. Redefinir el método getPersona para cargar también los datos de empleado. Redefinir su propiedad estado a = “inactivo”
+Definir un objeto de la clase Persona y llamar a sus métodos. También crear un objeto de la clase Empleado y llamar a sus métodos.
+
+9. Un grupo de amigos decide construir un programa en PDO que permita definir una clase llamada torneo de futbol con las propiedades nombre del equipo, numero de integrantes, estado asignar = Ascenso
+Crear una segunda clase partidos que herede la clase torneo de futbol. Añadir los atributos número de partidos ganados.
+Definir un objeto para llamar la clase torneo de futbol. Redefinir la propiedad estado = Descenso, si el numero de puntos es inferior a 15.
+
+10. Se necesita construir un programa que contenga una clase llamada zapatos con las propiedades talla, marca y stock crear un método getVerInventario para visualizar las propiedades.
+Definir una segunda clase llamada deportivos con los atributos descripción, precio y cantidad redefinir el método getVerInventario para mostrar también los atributos de la clase deportivos, si la cantidad solicitada es mayor al stock mostrar el mensaje que no se puede realizar la venta
